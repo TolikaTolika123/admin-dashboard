@@ -1,13 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
+
 <body>
-  
+  <header class="header">
+    <div class="header__top">
+      <form class="header__search">
+        <label for="search"><img src="images/loupe.svg" alt="Search"></label>
+        <input type="text">
+      </form>
+    </div>
+    <button class="notifications" name="notifications">
+      <img src="images/bell.svg" alt="notifications">
+    </button>
+    <a class="header__profile-link" href="#">
+      <img src="images/cat.png" alt="profile picture" class="header__profile-link-img">
+      <p class="header__profile-link-name">Morgan Oakley</p>
+    </a>
+    <div class="header__bottom">
+      <div class="header__profile">
+        <img src="images/cat.png" alt="profile picture" class="header__profile-img">
+        <p class="header__profile-greeting">Hi there,</p>
+        <p class="header__profile-name">Morgan Oakley</p>
+      </div>
+      <div class="header__buttons">
+        <button type="button">New</button>
+        <button type="button">Upload</button>
+        <button type="button">Share</button>
+      </div>
+    </div>
+  </header>
+  <aside class="aside">
+    <h1 class="dashboard__title"><img src="images/dashboard.svg" alt=""> Dashboard</h1>
+    <ul class="dashboard__services">
+      <li class="dashboard__services-item">
+        <a href="#" class="dashbaord__serviecs-link">
+          <img src="images/home.svg" alt="Home" class="dashbaord__services-img">
+          <span class="dashboard__services-text">Home</span>
+        </a>
+      </li>
+      <li class="dashboard__services-item">
+        <a href="#" class="dashbaord__serviecs-link">
+          <img src="images/id.svg" alt="profile" class="dashbaord__services-img">
+          <span class="dashboard__services-text">Profile</span>
+        </a>
+      </li>
+      <li class="dashboard__services-item">
+        <a href="#" class="dashbaord__serviecs-link">
+          <img src="images/message.svg" alt="message" class="dashbaord__services-img">
+          <span class="dashboard__services-text">Messages</span>
+        </a>
+      </li>
+      <li class="dashboard__services-item">
+        <a href="#" class="dashbaord__serviecs-link">
+          <img src="images/clock.svg" alt="history" class="dashbaord__services-img">
+          <span class="dashboard__services-text">History</span>
+        </a>
+      </li>
+      <li class="dashboard__services-item">
+        <a href="#" class="dashbaord__serviecs-link">
+          <img src="images/files.svg" alt="tasks" class="dashbaord__services-img">
+          <span class="dashboard__services-text">Tasks</span>
+        </a>
+      </li>
+      <li class="dashboard__services-item">
+        <a href="#" class="dashbaord__serviecs-link">
+          <img src="images/people.svg" alt="communities" class="dashbaord__services-img">
+          <span class="dashboard__services-text">Communities</span>
+        </a>
+      </li>
+    </ul>
+    <ul class="dashboard__help">
+      <li class="dashboard__help-item">
+        <a href="#" class="dashbaord__help-link">
+          <img src="images/settings.svg" alt="settings" class="dashbaord__help-img">
+          <span class="dashboard__help-text">Settings</span>
+        </a>
+      </li>
+      <li class="dashboard__help-item">
+        <a href="#" class="dashbaord__help-link">
+          <img src="images/question-mark.svg" alt="support" class="dashbaord__help-img">
+          <span class="dashboard__help-text">Support</span>
+        </a>
+      </li>
+      <li class="dashboard__help-item">
+        <a href="#" class="dashbaord__help-link">
+          <img src="images/shield.svg" alt="privacy" class="dashbaord__help-img">
+          <span class="dashboard__help-text">Privacy</span>
+        </a>
+      </li>
+    </ul>
+  </aside>
+  <main class="main">
+    <div class="projects">
+      <h2 class="projects__title">Your Projects</h2>
+      <div class="projects__container">
+        <a class="projects__item">
+          <h3 class="projects__item-title">Super Cool Project</h3>
+          <p class="projects__item-text">Ipsa alias omnis iste magnam dicta dolorem incidunt itaque facilis nemo
+            aperiam. Reprehenderit porro eos dignissimos beatae et voluptatem? Asperiores, sed praesentium!</p>
+          <div class="projects__item-options">
+            <button class="projects__item-btn" type="button"><img src="images/favourite.svg" alt="add favourite"
+                class="projects__item-btn"></button>
+            <button class="projects__item-btn" type="button"><img src="images/eye.svg" alt="seen"
+                class="projects__item-btn"></button>
+            <button class="projects__item-btn" type="button"><img src="images/share.svg" alt="share"
+                class="projects__item-btn"></button>
+          </div>
+        </a>
+
+        <a class="projects__item">
+          <h3 class="projects__item-title">Less Cool Project</h3>
+          <p class="projects__item-text">Ipsa alias omnis iste magnam dicta dolorem incidunt itaque facilis nemo
+            aperiam. Reprehenderit porro eos dignissimos beatae et voluptatem? Asperiores, sed praesentium!</p>
+          <div class="projects__item-options">
+            <button class="projects__item-btn" type="button"><img src="images/favourite.svg" alt="add favourite"
+                class="projects__item-btn"></button>
+            <button class="projects__item-btn" type="button"><img src="images/eye.svg" alt="seen"
+                class="projects__item-btn"></button>
+            <button class="projects__item-btn" type="button"><img src="images/share.svg" alt="share"
+                class="projects__item-btn"></button>
+          </div>
+        </a>
+
+        <a class="projects__item">
+          <h3 class="projects__item-title">Impossible App</h3>
+          <p class="projects__item-text">Ipsa alias omnis iste magnam dicta dolorem incidunt itaque facilis nemo
+            aperiam. Reprehenderit porro eos dignissimos beatae et voluptatem? Asperiores, sed praesentium!</p>
+          <div class="projects__item-options">
+            <button class="projects__item-btn" type="button"><img src="images/favourite.svg" alt="add favourite"
+                class="projects__item-btn"></button>
+            <button class="projects__item-btn" type="button"><img src="images/eye.svg" alt="seen"
+                class="projects__item-btn"></button>
+            <button class="projects__item-btn" type="button"><img src="images/share.svg" alt="share"
+                class="projects__item-btn"></button>
+          </div>
+        </a>
+
+        <a class="projects__item">
+          <h3 class="projects__item-title">Easy Peasy App</h3>
+          <p class="projects__item-text">Ipsa alias omnis iste magnam dicta dolorem incidunt itaque facilis nemo
+            aperiam. Reprehenderit porro eos dignissimos beatae et voluptatem? Asperiores, sed praesentium!</p>
+          <div class="projects__item-options">
+            <button class="projects__item-btn" type="button"><img src="images/favourite.svg" alt="add favourite"
+                class="projects__item-btn"></button>
+            <button class="projects__item-btn" type="button"><img src="images/eye.svg" alt="seen"
+                class="projects__item-btn"></button>
+            <button class="projects__item-btn" type="button"><img src="images/share.svg" alt="share"
+                class="projects__item-btn"></button>
+          </div>
+        </a>
+
+        <a class="projects__item">
+          <h3 class="projects__item-title">Add Blocker</h3>
+          <p class="projects__item-text">Ipsa alias omnis iste magnam dicta dolorem incidunt itaque facilis nemo
+            aperiam. Reprehenderit porro eos dignissimos beatae et voluptatem? Asperiores, sed praesentium!</p>
+          <div class="projects__item-options">
+            <button class="projects__item-btn" type="button"><img src="images/favourite.svg" alt="add favourite"
+                class="projects__item-btn"></button>
+            <button class="projects__item-btn" type="button"><img src="images/eye.svg" alt="seen"
+                class="projects__item-btn"></button>
+            <button class="projects__item-btn" type="button"><img src="images/share.svg" alt="share"
+                class="projects__item-btn"></button>
+          </div>
+        </a>
+
+        <a class="projects__item">
+          <h3 class="projects__item-title">Money Maker</h3>
+          <p class="projects__item-text">Ipsa alias omnis iste magnam dicta dolorem incidunt itaque facilis nemo
+            aperiam. Reprehenderit porro eos dignissimos beatae et voluptatem? Asperiores, sed praesentium!</p>
+          <div class="projects__item-options">
+            <button class="projects__item-btn" type="button"><img src="images/favourite.svg" alt="add favourite"
+                class="projects__item-btn"></button>
+            <button class="projects__item-btn" type="button"><img src="images/eye.svg" alt="seen"
+                class="projects__item-btn"></button>
+            <button class="projects__item-btn" type="button"><img src="images/share.svg" alt="share"
+                class="projects__item-btn"></button>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="announcements">
+      <h2 class="announcements__title">Announcements</h2>
+      <ul class="announcements__list">
+        <li class="announcements__item">
+          <a href="#" class="announcements__item-container">
+            <h3 class="announcements__item-title">Site Maintenance</h3>
+            <p class="announcements__item-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores
+              voluptatum ipsa cupiditate unde</p>
+          </a>
+        </li>
+        <li class="announcements__item">
+          <a href="#" class="announcements__item-container">
+            <h3 class="announcements__item-title">Community Share Day</h3>
+            <p class="announcements__item-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores
+              voluptatum ipsa cupiditate unde</p>
+          </a>
+        </li>
+        <li class="announcements__item">
+          <a href="#" class="announcements__item-container">
+            <h3 class="announcements__item-title">Updated Privacy Policy</h3>
+            <p class="announcements__item-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores
+              voluptatum ipsa cupiditate unde</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="trending">
+      <h3 class="trending__title">Trending</h3>
+      <div class="trending__content">
+        <ul class="trending__list">
+          <li class="trending__item">
+            <a href="#" class="trending__item-conatiner">
+              <img src="images/fox.png" alt="profile picture" class="trending__item-img">
+              <h4 class="trending__item-title">@tegan</h4>
+              <p class="trending__item-descr">World Peace Builder</p>
+            </a>
+          </li>
+          <li class="trending__item">
+            <a href="#" class="trending__item-conatiner">
+              <img src="images/cat.png" alt="profile picture" class="trending__item-img">
+              <h4 class="trending__item-title">@morgan</h4>
+              <p class="trending__item-descr">Super Cool Project</p>
+            </a>
+          </li>
+          <li class="trending__item">
+            <a href="#" class="trending__item-conatiner">
+              <img src="images/penguin.png" alt="profile picture" class="trending__item-img">
+              <h4 class="trending__item-title">@kendail</h4>
+              <p class="trending__item-descr">Life Changin App</p>
+            </a>
+          </li>
+          <li class="trending__item">
+            <a href="#" class="trending__item-conatiner">
+              <img src="images/turtle.png" alt="profile picture" class="trending__item-img">
+              <h4 class="trending__item-title">@alex</h4>
+              <p class="trending__item-descr">No Traffic Maker</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
 </body>
+
 </html>

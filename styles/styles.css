@@ -153,9 +153,57 @@ body {
   background-color: #1d72a1;
 }
 
-.aside {
+.dashboard {
   grid-area: aside;
   background-color: #1d8dcc;
+  padding: 30px;
+}
+
+.dashboard__title {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 1.7rem;
+  gap: 15px;
+  margin-bottom: 60px;
+}
+
+.dashboard__services,
+.dashboard__help {
+  list-style: none;
+}
+.dashboard__services {
+  margin-bottom: 70px;
+}
+
+.dashboard__services-item,
+.dashboard__help-item {
+  margin-bottom: 20px;
+}
+
+.dashboard__serviecs-link,
+.dashboard__help-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.dashboard__services-item:hover .dashboard__services-text,
+.dashboard__help-item:hover .dashboard__help-text {
+  border-bottom: 1px solid #fff;
+}
+
+.dashboard__services-img,
+.dashboard__help-img {
+  width: 30px;
+}
+
+.dashboard__services-text,
+.dashboard__help-text {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.2rem;
 }
 
 .main {
